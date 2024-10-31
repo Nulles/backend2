@@ -6,8 +6,8 @@ RUN apt-get update && \
     apt-get install -y wget git && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-RUN wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb
-RUN apt install ./jdk-21_linux-x64_bin.deb
+RUN wget https://download.oracle.com/java/20/latest/jdk-20_linux-x64_bin.deb
+RUN apt install ./jdk-20_linux-x64_bin.deb
 
 # Cloning backend repository
 RUN git clone https://github.com/Daniil-Zakharov/backend.git /backend
